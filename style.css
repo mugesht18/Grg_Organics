@@ -1,0 +1,230 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+.title1{
+    display: flex;
+    align-items: center;
+}
+
+
+.organic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+
+.organics-container {
+    display: flex;
+    gap: 15px;
+
+}
+
+.organics-container a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.organics-links a:hover {
+    color: chocolate;
+    /* text-decoration: underline; */
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/*side navbar*/
+.side-navbar{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: wheat;
+    
+    transition: 2s;
+    
+}
+.side-navbar-link{
+    margin-bottom: 20px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+
+}
+
+.image-body {
+    width: 70%;
+    height: 70%;
+}
+
+.Service {
+    padding: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container1 {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.service-container1 div {
+    background-color: rgb(233, 227, 227);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.product {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.product-container {
+    text-align: center;
+}
+
+.images {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images-container {
+    text-align: center;
+    flex-basis: 20%;
+
+}
+ .images-container button{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+ }
+.Contact {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+
+}
+.details{
+    background-image: url('https://thumbs.dreamstime.com/b/frame-organic-food-fresh-raw-vegetables-black-beans-chalkboard-79572055.jpg');
+    background-size: cover;
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+     
+}
+.details-container{
+    width: 40%;
+    height: 35%;
+    background-color: white;
+    border-radius:10px;
+    border: solid;
+    padding: 10px;
+}
+
+.details div{
+    
+  color:rgb(39, 38, 38);
+  text-align: center;
+  font-size: larger;
+ 
+}
+
+.details-container1 h1{
+    color: rgb(7, 7, 7);
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+/*media query*/
+@media screen and (max-width:600px) {
+    .service-container1 {
+       flex-direction: column;
+    }
+    .service{
+        display: none;
+    }
+    .imgs{
+        display: none;
+    }
+    .details div{
+        font-size:95%;
+    }
+    .navbar-menu-toggle{
+    display: none;
+    }
+.organics-container{
+    display: block;
+}
+
+}
