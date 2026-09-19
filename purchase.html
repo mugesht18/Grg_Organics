@@ -4,120 +4,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRG </title>
-    <link rel="icon"
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwi_DJ4c8lxCboNmlBk_SflDJIfGi1rXFFyQ&s">
-    <!--google fonts-->
+    <title>Purchase Pure Organic Products | GRG Organics</title>
+    <meta name="description" content="Shop 100% pure organic powders, cold-pressed hair oils, pickles, and health mixes from GRG Organics. Fresh daily quality with fast delivery.">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwi_DJ4c8lxCboNmlBk_SflDJIfGi1rXFFyQ&s">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!--my css link-->
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <!--font awesome icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="organic">
-        <h1 class="title">GRG ORGANICS </h1>
-        <div class="organics-container">
-            <p class="organics-links"><a href="index.html"> <i style="color:red;"  class="fa-solid fa-home"></i> Home</a></p>
-            <p class="organics-links"><a href="purchase.html"><i style="color:black" class="fa-solid fa-cart-shopping"></i> Purchase</a></p>
-            <p class="organics-links"><a href="contact.html"><i style="color:green "class="fa-solid fa-phone"></i> Contact</a></p>
+    <!-- Branded Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner">
+            <div class="preloader-ring"></div>
+            <i class="fa-solid fa-leaf preloader-leaf"></i>
         </div>
-    </nav>
-<!--products-->
-
-
- <div class="product-section">
-        <form class="product-search">
-            <input type="text" id="search" placeholder="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form>
-      <div class="product">
-        <div class="product-container"> 
-          
-            <h1>Purchase</h1>
-        </div>
-    <div class="images" id="imagess">
-        <div class="images-container">
-            <img src="images/Chicken Pickle Powder Packaging.png" alt="" height="200px" width="200px">
-            <p>Chicken Pickle &#8377 200 </p>
-            <button>Order Now</button>
-        </div>
-        <div class="images-container">
-            <img src="images/Organic ABC Juice Powder Pack.png" alt="" height="200px" width="200px">
-             <p>ABC Powder &#8377 150</p>
-             <button>Order Now</button>
-        </div>
-        <div class="images-container">
-            <img src="images/ChatGPT Image Sep 1, 2025, 04_24_21 AM.png" alt="" height="200px" width="200px">
-            <p>Beetroot Health Powder &#8377 180</p>
-            <button>Order Now</button>
-        </div>
-        <div class="images-container">
-            <img src="images/ChatGPT Image Sep 1, 2025, 04_27_12 AM.png" alt=""  height="200px" width="200px">
-            <p>Thaali Powder &#8377 100</p>
-            <button>Order Now</button>
-        </div>
-        <div class="images-container">
-           <img src="images/ChatGPT Image Sep 1, 2025, 04_31_29 AM.png" alt="" height="200px" width="200px">
-            <p>Face Pack Powder &#8377 190</p>
-            <button>Order Now</button>
-        </div>
-        <div class="images-container">
-            <img src="images/ChatGPT Image Sep 1, 2025, 04_35_32 AM.png" alt="" height="200px" width="200px">
-            <p> Hair Oil &#8377 120</p>
-            <button>Order Now</button>
-        </div>
-        <div class="images-container">
-            
-            <img src="images/ChatGPT Image Sep 1, 2025, 04_52_41 AM.png" alt="" height="200px" width="200px">
-            <p> Health Mix Powder &#8377 170</p>
-            <button>Order Now</button>
-        </div>
-        <div class="images-container">
-            <img src="images/ChatGPT Image Sep 1, 2025, 04_55_10 AM.png" alt=""  height="200px" width="200px">
-            <p>Curry Leaves Powder &#8377 90</p>
-            <button>Order Now</button>
-        </div>
-
+        <div class="preloader-text">GRG ORGANICS</div>
     </div>
-        
-      </div>
 
-      
-         <script src="purchase.js"></script>
-         <script src="script.js"></script>
+    <!-- Desktop Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
 
+    <!-- Sticky Header Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="brand-logo-link">
+                <img src="images/ChatGPT Image Sep 1, 2025, 09_52_03 PM.png" alt="GRG Organics Logo" class="brand-logo-img">
+                <span class="brand-name">GRG Organics</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="index.html#about" class="nav-link"><i class="fa-solid fa-leaf"></i> About Us</a></li>
+                <li><a href="purchase.html" class="nav-link active"><i class="fa-solid fa-basket-shopping"></i> Products</a></li>
+                <li><a href="index.html#why-choose-us" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Why Choose Us</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+            <a href="purchase.html" class="header-cta-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Shop Now
+            </a>
+            <button class="hamburger-btn" onclick="showNavbar()" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-    <!--Contact us-->
-
-        <div class="Contact"> 
-        <div class="Contact-Container">
-           <div class="Contact-box-1">
-            <h2>GRG ORGANICS</h2>
-            
-            <p>“GRG Organics brings you 100% natural and pure products made with care. We believe in healthy living and offer powders, oils, and mixes free from chemicals and additives. Stay close to nature with GRG Organics.”</p>
-            
-                 <div class="Contact-icon-container">
-                <i class="fa-brands fa-instagram" style="color: white;"></i>
-                <i class="fa-brands fa-twitter" style="color: white;"></i>
-                <i class="fa-brands fa-facebook" style="color: white;"></i>
-             </div>
-             <p>@2025 Grg_Organics.com</p>
-          </div>
-      </div>
+    <!-- Mobile Drawer Overlay & Menu -->
+    <div class="mobile-drawer-overlay" onclick="closeNavbar()"></div>
+    <div class="mobile-drawer">
+        <div>
+            <div class="drawer-header">
+                <div class="drawer-logo">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 09_52_03 PM.png" alt="GRG Logo">
+                    <span>GRG ORGANICS</span>
+                </div>
+                <button class="drawer-close-btn" onclick="closeNavbar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html" class="mobile-nav-link" onclick="closeNavbar()"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="index.html#about" class="mobile-nav-link" onclick="closeNavbar()"><i class="fa-solid fa-leaf"></i> About Us</a></li>
+                <li><a href="purchase.html" class="mobile-nav-link active" onclick="closeNavbar()"><i class="fa-solid fa-basket-shopping"></i> Purchase</a></li>
+                <li><a href="index.html#why-choose-us" class="mobile-nav-link" onclick="closeNavbar()"><i class="fa-solid fa-shield-halved"></i> Why Choose Us</a></li>
+                <li><a href="contact.html" class="mobile-nav-link" onclick="closeNavbar()"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="drawer-footer">
+            <p style="font-size: 0.85rem; opacity: 0.7;">Stay close to nature with GRG Organics.</p>
+            <div class="drawer-socials">
+                <a href="https://www.instagram.com/grg__organics?igsh=b2JjY2VhNzluenMy" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
     </div>
+
+    <!-- Page Hero Banner -->
+    <section class="section-padding" style="background: linear-gradient(135deg, var(--mint-bg), var(--cream-bg)); padding-top: 140px; padding-bottom: 60px;">
+        <div class="section-header" style="margin-bottom: 0;">
+            <div class="section-subtitle">Pure Organic Collection</div>
+            <h1 class="section-title">Explore & Purchase Products</h1>
+            <p class="section-description">
+                100% natural, farm-fresh products crafted with traditional care in Nagercoil. Search and order directly to your address.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Products Purchase Section -->
+    <section class="section-padding" style="padding-top: 50px;">
+        <!-- Search & Filter Controls -->
+        <div class="product-search-container reveal-on-scroll">
+            <div class="search-input-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="Search products by name (e.g. Pickle, ABC Powder, Hair Oil)..." aria-label="Search Products">
+            </div>
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Products</button>
+                <button class="category-tab" data-category="health">Health Mixes</button>
+                <button class="category-tab" data-category="hair">Hair Care</button>
+                <button class="category-tab" data-category="beauty">Beauty & Care</button>
+                <button class="category-tab" data-category="pickles">Pickles</button>
+                <button class="category-tab" data-category="herbal">Herbal Powders</button>
+            </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid reveal-stagger" id="imagess">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="pickles">
+                <span class="product-badge">Pickles</span>
+                <div class="product-img-box">
+                    <img src="images/Chicken Pickle Powder Packaging.png" alt="Chicken Pickle">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Chicken Pickle</h3>
+                    <p class="product-desc">Traditional spicy chicken pickle made with organic spices & cold-pressed oil.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹200</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Chicken Pickle', 200, 'images/Chicken Pickle Powder Packaging.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="health">
+                <span class="product-badge">Health Mixes</span>
+                <div class="product-img-box">
+                    <img src="images/Organic ABC Juice Powder Pack.png" alt="ABC Powder">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">ABC Powder</h3>
+                    <p class="product-desc">Pure Apple, Beetroot & Carrot instant superfood powder for daily immunity & energy.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹150</span>
+                        <button class="product-order-btn" onclick="openOrderModal('ABC Powder', 150, 'images/Organic ABC Juice Powder Pack.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="health">
+                <span class="product-badge">Health Mixes</span>
+                <div class="product-img-box">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 04_24_21 AM.png" alt="Beetroot Health Drink Powder">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Beetroot Health Powder</h3>
+                    <p class="product-desc">Nutrient-rich natural beetroot powder mix for stamina, iron boost, and health.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹180</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Beetroot Health Powder', 180, 'images/ChatGPT Image Sep 1, 2025, 04_24_21 AM.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="hair">
+                <span class="product-badge">Hair Care</span>
+                <div class="product-img-box">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 04_27_12 AM.png" alt="Thaali Powder">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Thaali Powder</h3>
+                    <p class="product-desc">Traditional organic herbal wash powder for silky, strong, and healthy hair.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹100</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Thaali Powder', 100, 'images/ChatGPT Image Sep 1, 2025, 04_27_12 AM.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="beauty">
+                <span class="product-badge">Beauty & Care</span>
+                <div class="product-img-box">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 04_31_29 AM.png" alt="Face Pack Powder">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Face Pack Powder</h3>
+                    <p class="product-desc">Natural skin-glowing herbal face pack crafted from botanical extracts & wild turmeric.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹190</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Face Pack Powder', 190, 'images/ChatGPT Image Sep 1, 2025, 04_31_29 AM.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="hair">
+                <span class="product-badge">Hair Care</span>
+                <div class="product-img-box">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 04_35_32 AM.png" alt="Hair Oil">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Hair Oil</h3>
+                    <p class="product-desc">Pure cold-pressed herbal hair oil infused with 18 organic herbs for hair growth.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹120</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Hair Oil', 120, 'images/ChatGPT Image Sep 1, 2025, 04_35_32 AM.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card" data-category="health">
+                <span class="product-badge">Health Mixes</span>
+                <div class="product-img-box">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 04_52_41 AM.png" alt="Health Mix Powder">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Health Mix Powder</h3>
+                    <p class="product-desc">Traditional multigrain health drink mix packed with essential vitamins & minerals.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹170</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Health Mix Powder', 170, 'images/ChatGPT Image Sep 1, 2025, 04_52_41 AM.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card" data-category="herbal">
+                <span class="product-badge">Herbal Powders</span>
+                <div class="product-img-box">
+                    <img src="images/ChatGPT Image Sep 1, 2025, 04_55_10 AM.png" alt="Curry Leaves Powder">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Curry Leaves Powder</h3>
+                    <p class="product-desc">Fresh farm-picked curry leaf powder rich in iron, antioxidants, and digestive herbs.</p>
+                    <div class="product-footer">
+                        <span class="product-price">₹90</span>
+                        <button class="product-order-btn" onclick="openOrderModal('Curry Leaves Powder', 90, 'images/ChatGPT Image Sep 1, 2025, 04_55_10 AM.png')">
+                            Order Now <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>
+                    <img src="images/ChatGPT Image Sep 1, 2025, 09_52_03 PM.png" alt="GRG Logo" style="height: 38px; width: 38px; border-radius: 50%;">
+                    GRG ORGANICS
+                </h3>
+                <p>
+                    GRG Organics brings you 100% natural and pure products made with care. We believe in healthy living and offer powders, oils, and mixes free from chemicals and additives. Stay close to nature with GRG Organics.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/grg__organics?igsh=b2JjY2VhNzluenMy" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="index.html#about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                    <li><a href="purchase.html"><i class="fa-solid fa-angle-right"></i> Purchase</a></li>
+                    <li><a href="index.html#why-choose-us"><i class="fa-solid fa-angle-right"></i> Why Choose Us</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="purchase.html"><i class="fa-solid fa-angle-right"></i> Health Mixes</a></li>
+                    <li><a href="purchase.html"><i class="fa-solid fa-angle-right"></i> Hair Care</a></li>
+                    <li><a href="purchase.html"><i class="fa-solid fa-angle-right"></i> Beauty & Skincare</a></li>
+                    <li><a href="purchase.html"><i class="fa-solid fa-angle-right"></i> Pickles & Condiments</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>123 therekalputhoor, Nagercoil</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>9454567890</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>@grg__organics</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GRG Organics. All rights reserved.</p>
+            <p>100% Pure & Natural Organic Products</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Order Modal Popup -->
+    <div class="modal-overlay" id="orderModalOverlay" onclick="if(event.target === this) closeOrderModal()">
+        <div class="order-modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-cart-shopping"></i> Quick Order</h3>
+                <button class="modal-close-btn" onclick="closeOrderModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-product-summary">
+                    <img src="" id="modalProductImg" alt="Product" class="modal-product-img">
+                    <div class="modal-product-info">
+                        <h4 id="modalProductName">Product Title</h4>
+                        <p id="modalProductPrice">₹0</p>
+                    </div>
+                </div>
+                <form onsubmit="handleOrderSubmit(event)">
+                    <input type="hidden" id="orderProductNameInput" value="">
+                    <div class="form-group">
+                        <label for="orderCustomerName">Your Full Name *</label>
+                        <input type="text" id="orderCustomerName" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderCustomerPhone">Phone Number *</label>
+                        <input type="tel" id="orderCustomerPhone" class="form-control" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderCustomerAddress">Delivery Address *</label>
+                        <textarea id="orderCustomerAddress" class="form-control" placeholder="Enter complete address" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+                        Confirm Order via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Scroll To Top Button -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="purchase.js"></script>
 </body>
 
 </html>
-
-
-

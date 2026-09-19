@@ -1,19 +1,56 @@
-var productContainer= document.getElementById("imagess")
-var Search = document.getElementById("search")
-var productlist = productContainer.querySelectorAll("div")
-Search.addEventListener("keyup",function(){
-    var enteredvalue = event.target.value.toUpperCase()
+/* ==========================================================================
+   GRG ORGANICS - PURCHASE PAGE SEARCH & CATEGORY FILTERING
+   ========================================================================== */
 
-    for(count=0;count<productlist.length;count=count+1)
-    {
-        var productname= productlist[count].querySelector("p").textContent
+document.addEventListener("DOMContentLoaded", function () {
+    const productContainer = document.getElementById("imagess");
+    const searchInput = document.getElementById("search");
+    const categoryTabs = document.querySelectorAll(".category-tab");
 
-        if(productname.toUpperCase().indexOf(enteredvalue)<0)
-        {
-            productlist[count].style.display="none"
-        }
-        else{
-            productlist[count].style.display="block"
-        }
+    if (!productContainer) return;
+
+    const productCards = productContainer.querySelectorAll(".product-card");
+    let currentCategory = "all";
+    let currentSearchTerm = "";
+
+    function filterProducts() {
+        productCards.forEach((card) => {
+            const productName = card.querySelector(".product-name")
+                ? card.querySelector(".product-name").textContent.toLowerCase()
+                : "";
+            const productCategory = card.getAttribute("data-category") || "all";
+
+            const matchesSearch = productName.includes(currentSearchTerm);
+            const matchesCategory = currentCategory === "all" || productCategory === currentCategory;
+
+            if (matchesSearch && matchesCategory) {
+                card.style.display = "flex";
+                card.style.opacity = "1";
+                card.style.transform = "scale(1)";
+            } else {
+                card.style.display = "none";
+                card.style.opacity = "0";
+                card.style.transform = "scale(0.95)";
+            }
+        });
     }
-})
+
+    // Keyup search input listener
+    if (searchInput) {
+        searchInput.addEventListener("keyup", function (e) {
+            currentSearchTerm = e.target.value.toLowerCase().trim();
+            filterProducts();
+        });
+    }
+
+    // Category tabs click listener
+    categoryTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+            categoryTabs.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+
+            currentCategory = this.getAttribute("data-category") || "all";
+            filterProducts();
+        });
+    });
+});
