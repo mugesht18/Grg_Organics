@@ -174,7 +174,7 @@ function handleOrderSubmit(event) {
     const product = document.getElementById("orderProductNameInput") ? document.getElementById("orderProductNameInput").value : "Product";
 
     const text = `Hello GRG Organics! I would like to order: ${product}.%0A%0AName: ${name}%0APhone: ${phone}%0ADelivery Address: ${address}`;
-    const whatsappUrl = `https://wa.me/919445715991?text=${text}`;
+    const whatsappUrl = `https://wa.me/919454567890?text=${text}`;
 
     window.open(whatsappUrl, "_blank");
     closeOrderModal();
