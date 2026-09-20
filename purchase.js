@@ -25,19 +25,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (matchesSearch && matchesCategory) {
                 card.style.display = "flex";
-                card.style.opacity = "1";
-                card.style.transform = "scale(1)";
+                setTimeout(() => {
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0) scale(1)";
+                }, 20);
             } else {
-                card.style.display = "none";
                 card.style.opacity = "0";
-                card.style.transform = "scale(0.95)";
+                card.style.transform = "translateY(15px) scale(0.95)";
+                setTimeout(() => {
+                    if (card.style.opacity === "0") {
+                        card.style.display = "none";
+                    }
+                }, 300);
             }
         });
     }
 
     // Keyup search input listener
     if (searchInput) {
-        searchInput.addEventListener("keyup", function (e) {
+        searchInput.addEventListener("input", function (e) {
             currentSearchTerm = e.target.value.toLowerCase().trim();
             filterProducts();
         });

@@ -34,7 +34,7 @@
     <div class="custom-cursor"></div>
     <div class="custom-cursor-follower"></div>
 
-    <!-- Sticky Header Navigation -->
+    <!-- Sticky Glassmorphism Header Navigation -->
     <header class="site-header">
         <nav class="navbar">
             <a href="index.html" class="brand-logo-link">
@@ -88,16 +88,16 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Cinematic Hero Section with Mouse Parallax -->
     <section class="hero-section">
         <div class="hero-overlay-shapes">
-            <i class="fa-solid fa-leaf floating-leaf leaf-1"></i>
-            <i class="fa-solid fa-seedling floating-leaf leaf-2"></i>
-            <i class="fa-solid fa-leaf floating-leaf leaf-3"></i>
-            <i class="fa-solid fa-plant-wilt floating-leaf leaf-4"></i>
+            <i class="fa-solid fa-leaf floating-leaf leaf-1" data-parallax-speed="28"></i>
+            <i class="fa-solid fa-seedling floating-leaf leaf-2" data-parallax-speed="-18"></i>
+            <i class="fa-solid fa-leaf floating-leaf leaf-3" data-parallax-speed="32"></i>
+            <i class="fa-solid fa-plant-wilt floating-leaf leaf-4" data-parallax-speed="-22"></i>
         </div>
         <div class="hero-content">
-            <div class="hero-text-block">
+            <div class="hero-text-block" data-parallax-speed="6">
                 <div class="hero-badge">
                     <i class="fa-solid fa-seedling"></i> 100% Farm-Fresh & Chemical Free
                 </div>
@@ -116,11 +116,11 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-visual-card">
+            <div class="hero-visual-card" data-parallax-speed="14">
                 <div class="hero-img-wrapper">
                     <img src="images/hero_bg.png" alt="GRG Organics Harvest">
                 </div>
-                <div class="hero-floating-badge">
+                <div class="hero-floating-badge" data-parallax-speed="20">
                     <div class="badge-icon">
                         <i class="fa-solid fa-award"></i>
                     </div>
@@ -142,14 +142,16 @@
     <section class="section-padding" id="about">
         <div class="about-grid">
             <div class="about-image-wrapper reveal-on-scroll">
-                <img src="images/about_img.png" alt="About GRG Organics Ingredients" class="about-img-main">
+                <div class="img-reveal-box">
+                    <img src="images/about_img.png" alt="About GRG Organics Ingredients" class="about-img-main">
+                </div>
                 <div class="about-badge-overlay">
                     <span>100%</span>
                     <small>Natural</small>
                 </div>
             </div>
-            <div class="about-content reveal-on-scroll">
-                <div class="section-subtitle">About GRG Organics</div>
+            <div class="about-content text-reveal">
+                <div class="section-subtitle"><i class="fa-solid fa-leaf"></i> About GRG Organics</div>
                 <h3>Bringing Traditional Organic Goodness to Every Home</h3>
                 <p>
                     GRG Organics was founded with a passion for healthy, natural living. We specialize in producing 100% pure herbal powders, cold-pressed oils, health drink mixes, and signature traditional condiments completely free from artificial additives.
@@ -175,10 +177,17 @@
         </div>
     </section>
 
+    <!-- Organic Wave Section Transition -->
+    <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="#edf9f0" fill-opacity="1" d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+        </svg>
+    </div>
+
     <!-- Why Choose Us / Services Section -->
     <section class="section-padding features-section" id="why-choose-us">
-        <div class="section-header reveal-on-scroll">
-            <div class="section-subtitle">Why Choose Us</div>
+        <div class="section-header text-reveal">
+            <div class="section-subtitle"><i class="fa-solid fa-shield-halved"></i> Why Choose Us</div>
             <h2 class="section-title">Pure Quality You Can Trust Everyday</h2>
             <p class="section-description">
                 We take immense pride in delivering authentic, farm-fresh products that keep your family healthy and happy.
@@ -216,10 +225,17 @@
         </div>
     </section>
 
+    <!-- Organic Curve Divider -->
+    <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path fill="#fafafa" fill-opacity="1" d="M0,0L48,16C96,32,192,64,288,69.3C384,75,480,53,576,42.7C672,32,768,32,864,37.3C960,43,1056,53,1152,53.3C1248,53,1344,43,1392,37.3L1440,32L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z"></path>
+        </svg>
+    </div>
+
     <!-- Products Showcase Section -->
     <section class="section-padding" id="prod">
-        <div class="section-header reveal-on-scroll">
-            <div class="section-subtitle">Our Products</div>
+        <div class="section-header text-reveal">
+            <div class="section-subtitle"><i class="fa-solid fa-basket-shopping"></i> Our Products</div>
             <h2 class="section-title">Handcrafted Essentials for Daily Wellness</h2>
             <p class="section-description">
                 Explore our signature range of organic health drink powders, herbal hair care products, and pickles.
@@ -402,8 +418,8 @@
 
     <!-- Testimonials Section -->
     <section class="section-padding">
-        <div class="section-header reveal-on-scroll">
-            <div class="section-subtitle">Customer Feedback</div>
+        <div class="section-header text-reveal">
+            <div class="section-subtitle"><i class="fa-solid fa-comment-dots"></i> Customer Feedback</div>
             <h2 class="section-title">Loved by Healthy Families Everywhere</h2>
             <p class="section-description">
                 See what our valued customers have to say about the quality and freshness of GRG Organics.
@@ -472,7 +488,7 @@
 
     <!-- Call-To-Action Banner -->
     <section class="cta-section">
-        <div class="cta-content reveal-on-scroll">
+        <div class="cta-content text-reveal">
             <h2 class="cta-title">Bring Nature Into Your Everyday Life</h2>
             <p class="cta-text">Discover fresh and natural products from GRG Organics, made with love and traditional care.</p>
             <a href="purchase.html" class="btn-primary" style="background: linear-gradient(135deg, var(--sage-light), var(--primary-green));">
